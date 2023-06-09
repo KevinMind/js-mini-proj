@@ -1,0 +1,62 @@
+* {
+  box-sizing: border-box;
+}
+
+h1 {
+    color: hotpink;
+    font-family: cursive;
+}
+
+table {
+  table-layout: fixed;
+  padding: 0;
+  width: 100%;
+  height: 100vh;
+  border-left: 1px solid;
+  border-top: 1px solid;
+}
+
+tbody {
+  padding: 0;
+}
+
+tr {
+  height: 2rem;
+}
+
+td {
+  border-right: 1px solid;
+  border-bottom: 1px solid;
+  padding: 0;
+  display: table-cell;
+  text-align: center;
+  vertical-align: middle;
+  word-wrap: break-word;
+}
+
+td > input,span {
+  width: 100%;
+  height: 100%;
+  border: none;
+  outline: none;
+  padding: 0;
+  text-align: center;
+  font-size: 1.2rem;
+  font-family: cursive;
+  background: transparent;
+}
+
+td:hover {
+  background: blue;
+}
+
+td.selected {
+  background: red;
+}
+
+.controller {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem 1.5rem;
+}
