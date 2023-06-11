@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
+    "chess": "parcel ./src/chess/index.html",
     "excel": "parcel ./src/excel/index.html"
   },
   "keywords": [],

@@ -1,0 +1,66 @@
+* {
+  box-sizing: border-box;
+}
+
+.board {
+  height: 90vh;
+  width: 100%;
+  max-width: 90vh;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  grid-template-rows: repeat(8, 2fr);
+  box-shadow: 1px 1px 10px 1px rgba(0, 0, 0, 0.2);
+}
+
+.square {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.square:hover {
+  cursor: pointer;
+  border: 1px solid yellow;
+}
+
+.square.white {
+  background: white;
+}
+
+.square.black {
+  background: black;
+  color: white;
+}
+
+.square.highlighted {
+  background: yellow;
+  color: black;
+}
+
+/* ["pawn", "rook", "knight", "bishop", "queen", "king"] */
+
+.piece {
+  border-radius: 100%;
+  background: blue;
+  padding: 2rem;
+  height: 2rem;
+  width: 2rem;
+  font-size: 1.5rem;
+  border: 1px solid;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.black {
+  background: black;
+  border-color: white;
+  color: white;
+}
+
+.white {
+  background: white;
+  color: black;
+  border-color: black;
+}
